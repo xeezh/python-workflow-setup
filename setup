@@ -2,8 +2,25 @@
 
 echo "Input python version (ex. 3.10)"
 read version
+clear
 
+echo "Installing Python $version"
+sleep 1
 sudo apt install software-properties-common -y 
 sudo add-apt-repository ppa:deadsnakes/ppa 
 sudo apt update
-sudo apt install -y mc unrar unzip python$version python$version-venv python$version-dev python3-pip build-essential libssl-dev libffi-dev
+sudo apt install -y python$version python$version-venv python$version-dev python3-pip build-essential 
+clear
+
+echo "Installing additional packages"
+sleep 1
+sudo apt install -y mc unrar unzip libssl-dev libffi-dev
+clear
+
+echo "Installing PM2"
+sleep 1
+sudo apt install -y npm
+npm install pm2
+clear
+
+echo "Done!"
