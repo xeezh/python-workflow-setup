@@ -6,8 +6,4 @@ read version
 sudo apt install software-properties-common -y 
 sudo add-apt-repository ppa:deadsnakes/ppa 
 sudo apt update
-sudo apt install mc unrar unzip
-sudo apt install python$version
-sudo apt install python3-pip
-sudo apt install -y build-essential libssl-dev libffi-dev python3-dev
-sudo apt install -y python3-venv
+sudo apt install -y mc unrar unzip python$version python$version-venv python$version-dev python3-pip build-essential libssl-dev libffi-dev
